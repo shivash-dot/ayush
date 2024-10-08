@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankalp Batch</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #F0F8FF;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: linear-gradient(90deg, #32CD32, #228B22);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+            color: #32CD32;
+        }
+        .student-box {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid #32CD32;
+            border-radius: 10px;
+            width: 200px;
+            transition: transform 0.2s;
+            color: white; /* For better contrast on random colors */
+            text-align: center;
+        }
+        .student-box:hover {
+            transform: scale(1.05);
+        }
+        .emoji {
+            font-size: 2em;
+        }
+        .student-name {
+            font-weight: bold;
+            color: #000; /* Dark color for the name */
+            margin-top: 10px;
+            display: block; /* Ensure name appears below emoji */
+        }
+        /* Mixed colors */
+        .box1 { background: linear-gradient(to right, #FF6347, #FF4500); } /* Tomato to OrangeRed */
+        .box2 { background: linear-gradient(to right, #4682B4, #1E90FF); } /* SteelBlue to DodgerBlue */
+        .box3 { background: linear-gradient(to right, #32CD32, #00FF7F); } /* LimeGreen to SpringGreen */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sankalp Batch</h1>
+        <nav>
+            <a href="batches.html" style="color: #fff; text-decoration: none;">Back to Batches</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Students in Sankalp Batch</h2>
+        <div class="student-box box1">
+            <span class="emoji">📚</span>
+            <span class="student-name"><a href="ayush.html" style="color: white; text-decoration: none;">Ayush Saini</a></span>
+        </div>
+        <div class="student-box box2">
+            <span class="emoji">📚</span>
+            <span class="student-name"><a href="sumran.html" style="color: white; text-decoration: none;">Sumran Saini</a></span>
+        </div>
+        <div class="student-box box3">
+            <span class="emoji">📚</span>
+            <span class="student-name"><a href="anita.html" style="color: white; text-decoration: none;">Anita Saini</a></span>
+        </div>
+    </main>
+</body>
+</html>

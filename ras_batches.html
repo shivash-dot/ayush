@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAS Batches - Gurukul Prasikshan Sansthan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #F0F8FF;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: linear-gradient(90deg, #007BFF, #6A5ACD);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .motivational-quote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #6A5ACD;
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            background-color: #e7f3ff;
+        }
+        .batch-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .batch-list li {
+            margin: 15px;
+            padding: 20px;
+            background-color: #D2B48C; /* Badami color */
+            border-radius: 10px;
+            font-size: 1.5em;
+            color: #333;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .batch-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .batch-list li a {
+            text-decoration: none; /* Underline ko remove karne ke liye */
+            color: #333; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gurukul Prasikshan Sansthan</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available RAS Batches</h2>
+        <div class="motivational-quote">
+            "Success is not just about what you accomplish in your life, it's about what you inspire others to do."
+        </div>
+        <ul class="batch-list">
+            <li><a href="kumar.html">Kumar Batch</a></li>
+            <li><a href="paras.html">Paras Batch</a></li>
+            <li><a href="prithvi.html">Prithvi Batch</a></li>
+        </ul>
+    </main>
+</body>
+</html>
