@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anita Saini - Target Batch</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             background-color: #F0F8FF;
@@ -26,7 +27,7 @@
         }
         .test-schedule {
             margin: 20px auto;
-            width: 80%;
+            width: 90%;
             border-collapse: collapse;
         }
         .test-schedule th, .test-schedule td {
@@ -37,6 +38,23 @@
         .test-schedule th {
             background-color: #32CD32;
             color: white;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .test-schedule {
+                width: 100%;
+            }
+            h2 {
+                font-size: 2em;
+            }
+        }
+        #performanceChart {
+            max-width: 600px;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -50,7 +68,8 @@
 
     <main>
         <h2>Details for Anita Saini</h2>
-        <h3>Remaining Leaves: <input type="number" placeholder="Enter leaves" /></h3>
+        <h3>Remaining Leaves: <label for="leaves">Enter leaves:</label> <input type="number" id="leaves" placeholder="Enter leaves" /></h3>
+        
         <table class="test-schedule">
             <thead>
                 <tr>
@@ -66,204 +85,60 @@
             <tbody>
                 <tr>
                     <td>30 September 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Indian Geography</td>
+                    <td>100</td>
+                    <td>31.5</td>
+                    <td>31.5%</td>
+                    <td>3</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>7 October 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Science</td>
+                    <td>100</td>
+                    <td>85</td>
+                    <td>85%</td>
+                    <td>2</td>
+                    <td>10</td>
                 </tr>
-                <tr>
-                    <td>14 October 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>21 October 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>28 October 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4 November 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11 November 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>18 November 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>25 November 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2 December 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9 December 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16 December 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>23 December 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>30 December 2024</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6 January 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>13 January 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>20 January 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>27 January 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3 February 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10 February 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>17 February 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>24 February 2025</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <!-- Additional rows can be added here -->
             </tbody>
         </table>
+
+        <h3>Overall Performance</h3>
+        <canvas id="performanceChart"></canvas>
     </main>
+
+    <footer>
+        <p>Contact: anita.saini@example.com</p>
+        <p>&copy; 2024 Anita Saini. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        const performanceChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Obtained Marks', 'Remaining Marks'],
+                datasets: [{
+                    label: 'Overall Performance',
+                    data: [31.5, 68.5], // Example data for the pie chart
+                    backgroundColor: ['#32CD32', '#ddd'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Overall Performance in Tests'
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
